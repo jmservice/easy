@@ -343,7 +343,7 @@ z-index: 9999;
 display: none;
 position: absolute;
 top: 50%;
-width: 30%;
+width: 95%;
 left: 50%;
 transform: translate(-50%, -50%);
 padding: 10px;
@@ -353,33 +353,6 @@ background-color: white;
 z-index: 9999;
 }
 
-.popup-form5 {
-display: none;
-position: fixed;
-top: 50%;
-width: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: 20px;
-border: 4px solid #ccc;
-border-color: tomato;
-background-color: orange;
-z-index: 9999;
-}
-
-.popup-form6 {
-display: none;
-position: fixed;
-top: 50%;
-width: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: 20px;
-border: 4px solid #ccc;
-border-color: tomato;
-background-color: orange;
-z-index: 9999;
-}
 
 #cardNumber{
 padding: 10px;
