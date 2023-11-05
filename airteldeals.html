@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>our deals</title>
+  <script defer src ="./index2.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style3.css">
+	 <link rel="icon" type="image/png" href="favicon.jpg">
+</head>
+<body>
+  <div id="overlay"></div>
+  	<nav>
+
+      <a href="easydeals.html">Home</a>
+  		<a href=#datadeals>Data</a>
+  		<a href=#minutesdeals>Minutes</a>
+  		<a href=#smsdeals>SMS</a>
+  	</nav>
+	
+    <div class="popup-form3" id="popupForm3">
+    <h4 style="color: green;">You can also pay with a different number from the one you enter here</h4>
+    <label for="cardNumber" id=" cardNumberLabel">Deal will be loaded to this number</label>
+    <br><input type="number" id="phone" placeholder="Enter number here e.g 0712345678">
+    
+    <br><br>
+    <button onclick="myFunction()">Confirm purchase</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm3(), closePopupForm2()">Cancel</button>
+  </div>
+
+  <div class="popup-form2" id="popupForm2">
+    <h4 style="color: green;">Please Enter M-Pesa Code to Complete the payment</h4>
+    <label for="cardNumber" id=" cardNumberLabel">M-Pesa Code</label>
+    <br><input type="text" id="code" maxlength="10" placeholder="Enter M-Pesa Code Here">
+    
+    <br><br>
+    <button onclick="myFunction2()">Complete Payment</button><br><br>
+    <button id = "cancelpayment" onclick="closePopupForm3(),closePopupForm2()">Cancel</button>
+  </div>
+
+  <div class="popup-form1" id="popupForm1">
+        <b><label for="cardNumber" id=" cardNumberLabel">Validating payment Please wait...</label></b>
+    </div>
+
+    <div class="popup-form0" id="popupForm0">
+        <b><label for="cardNumber" id=" cardNumberLabel">No payment was found with that code. Please try again</label></b>
+    </div>
+
+
+   <div class="popup-form4" id="popupForm4">
+    <h2>Follow these steps carefully:</h2>
+      <ol>
+        <li>Chose a deal and click Purchase</li>
+        <li>Enter your Number</li>
+        <li>Click Confirm Purchase</li>
+        <li>Go to M-Pesa PayBill</li>
+        <li>Pay the Price of the Deal to<br>Business Number<br> 7046345<br>Account Number<br> Easy Deals</li>
+        <li>Come back and input the M-Pesa Code<br>To complete the payment</li>
+        <b>NB: Do not pay less or more than the amount of the deal.<br>Deals will only be activated once you complete the payment</b>
+      </ol>
+    <button id = "cancelpayment" onclick="closePopupForm4()">Well Understood</button>
+  </div>
+
+  </div>
+<main>
+	<section id="portal" backgroun>
+    <h1 style="color: red" >Airtel Deals</h1>
+	<h2>Please read carefully on how to purchase these deals</h2>
+  <button id="open-btn" onclick="showPopupForm4()" style="font-size: 130%">How to Purchase</button></h4>
+          
+		<ul>
+      <section id = "datadeals">
+    <div class="saf">
+
+    		<li>    
+          <h3 style="color: red;">Data Deals</b></h3>          
+          <h4 label for="cardNumber">200gb valid for 30 days @ Ksh.1000 </label>  
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">150gb valid for 30 days @ Ksh.700</label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">100gb valid for 30 days @ Ksh.500 </label>  
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">80gb valid for 30 days @ Ksh.400 </label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">50gb valid for 30 days @ Ksh.300</label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">35gb valid for 30 days @ Ksh.250 </label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">30gb valid for 7 days @ Ksh.200 </label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">25gb valid for 7 days @ Ksh.170</label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">20gb valid for 7 days @ Ksh.130 </label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">10gb valid for 7 days @ Ksh.100 </label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          <h4 label for="cardNumber">6gb valid for 24 hrs @ Ksh.50 </label> 
+          <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+          
+
+      </li>
+    </div>
+  </section>
+
+  <section id="minutesdeals">
+   <div class="airtel">
+    <li>
+      <h3 style="color: red;" >All Networks Minutes Deals</h3>
+      <h4 label for="cardNumber">15,000 minutes valid for 30 days @ Ksh.800 </label> <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">10,000 minutes valid for 30 days @ Ksh.800 </label>  
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">8000 minutes valid for 30 days @ Ksh.500 </label>  
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">5000 minutes valid for 30 days @ Ksh.350 </label> 
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">3000 minutes valid for 30 hrs @ Ksh.300 </label>  
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">2000 minutes valid for 7 days @ Ksh.250 </label>  
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">1500 minutes valid for 7 days @ Ksh.200 </label> 
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">1000 minutes valid for 7 days @ Ksh.150 </label> 
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">700 minutes valid for 24 hrs @ Ksh.120 </label>  
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">500 minutes valid for 24 hrs @ Ksh.80 </label>  
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+      <h4 label for="cardNumber">400 minutes valid for 24 hrs @ Ksh.50 </label> 
+      <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+
+      </div>
+  </section>
+
+  <section id="smsdeals">
+    <div class="telkom" id="smsdeals" >
+      <li>
+        <h3 style="color: red;">All Networks SMS Deals</h3>
+        <h4 label for="cardNumber">20,000 SMS valid for 30 days @ Ksh.700 </label>    <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">15,000 SMS valid for 30 days @ Ksh.500 </label>  
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">10,000 SMS valid for 30 days @ Ksh.350 </label>  
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">8000 SMS valid for 30 days @ Ksh.250 </label> 
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">6000 SMS valid for 7 days @ Ksh.200 </label>  
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">4500 SMS valid for 7 days @ Ksh.150 </label>  
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">3500 SMS valid for 7 days @ Ksh.120 </label> 
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">2500 SMS valid for 7 dayss @ Ksh.100 </label>  
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">2000 SMS valid for 7 days @ Ksh.90 </label>  
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4>
+        <h4 label for="cardNumber">1000 SMS valid for 24 hrs @ Ksh.100 </label> 
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4> 
+        <h4 label for="cardNumber">700 SMS valid valid for 24 hrs @ Ksh.50 </label> 
+        <button id="open-btn" onclick="showPopupForm3(),closePopupForm2()">Purchase</button></h4> 
+      </li>
+    </div>
+  </section>
+
+</ul>
+</section>
+  
+</main>
+<br><br><br><br><br><br><br>
+<footer>
+	 <p>&copy; 2023 Easy deals. All rights reserved.</p>
+</footer>
+</body>
+</html>
